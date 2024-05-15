@@ -1,0 +1,985 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+  <!-- Mirrored from htmldemo.net/bagse/bagse/checkout.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 06 Nov 2023 04:35:25 GMT -->
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Karmic</title>
+    <meta name="robots" content="noindex, follow" />
+    <meta name="Googlebot" content="noindex" />
+    <meta
+      name="description"
+      content="Bagse - Bag Store HTML5 Template description text"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!-- Favicon -->
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="assets/images/favicon.png"
+    />
+
+    <!-- CSS (Font, Vendor, Icon, Plugins & Style CSS files) -->
+
+    <!-- Font CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com/" />
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Vendor CSS (Bootstrap & Icon Font) -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+
+    <!-- Plugins CSS (All Plugins Files) -->
+    <link rel="stylesheet" href="assets/css/roadthemes-icon.css" />
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      .vedio_back {
+        transition: 0.3s;
+      }
+      .card:hover .vedio_back {
+        display: block !important;
+        /* background-color: aquamarine; */
+        background: #000;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header class="header position-relative top-0 w-full z-3">
+      <!-- Header Bottom Area Start -->
+      <div class="hader-bottom-area sticky-header">
+        <div class="container-full px-50">
+          <div class="row align-items-center">
+            <div class="col-4 col-lg-3 order-2 order-lg-1">
+              <!-- Logo Start -->
+              <div class="logo text-center text-lg-start">
+                <a href="index.html">
+                  <img
+                    src="assets/images/logo/karmic.png"
+                    height="40"
+                    width="140"
+                    alt="logo"
+                  />
+                </a>
+              </div>
+              <!-- Logo Start -->
+            </div>
+            <div class="col-4 col-lg-9 order-1 order-lg-2">
+              <!-- Main Menu Area Start -->
+              <nav class="nav-main-menu d-none d-lg-flex justify-content-end">
+                <!-- Main Menu Start -->
+                <ul class="main-menu justify-content-center align-items-center">
+                  <li class="main-menu-item has-children active">
+                    <a href="#" class="main-menu-link">Home</a>
+                  </li>
+                  <li class="main-menu-item has-children--mega">
+                    <a href="#" class="main-menu-link">Deals</a>
+                    <!-- mega menu -->
+                  </li>
+                  <li class="main-menu-item has-children">
+                    <a href="#" class="main-menu-link">New Arrival</a>
+                  </li>
+                  <li class="main-menu-item has-children">
+                    <a href="#" class="main-menu-link">Package</a>
+                  </li>
+                  <li class="main-menu-item has-children">
+                    <a href="blog.html" class="main-menu-link">Welcome Back</a>
+                  </li>
+                  <li class="main-menu-item has-children">
+                    <button
+                      class="header-action-item d-none d-md-block"
+                      title="Search"
+                      type="button"
+                      data-bs-toggle="offcanvas"
+                      data-bs-target="#offcanvas-search"
+                    >
+                      <img
+                        src="./assets/images/headericon/hamburger.png"
+                        alt=""
+                        srcset=""
+                        width="22"
+                        class="op-6"
+                      />
+                    </button>
+                  </li>
+                  <li class="main-menu-item has-children">
+                    <a
+                      href="wishlist.html"
+                      class="header-action-item"
+                      title="Wishlist"
+                    >
+                      <img
+                        src="./assets/images/headericon/search.png"
+                        alt=""
+                        srcset=""
+                        width="20"
+                        class="op-6"
+                      />
+                    </a>
+                  </li>
+                  <li class="main-menu-item has-children">
+                    <button
+                      class="header-action-item"
+                      title="Cart Bag"
+                      type="button"
+                      data-bs-toggle="offcanvas"
+                      data-bs-target="#offcanvas-cart"
+                    >
+                      <img
+                        src="./assets/images/headericon/shopping-cart.png"
+                        alt=""
+                        srcset=""
+                        width="20"
+                        class="op-6"
+                      />
+                      <!-- <span class="header-action-item-count">(3)</span> -->
+                    </button>
+                  </li>
+                </ul>
+                <!-- Main Menu End -->
+
+                <!-- Heaer Action Area Start -->
+              </nav>
+              <!-- Main Menu Area End -->
+
+              <!-- Mobile Menu Toggole Button Start -->
+              <button
+                class="header-action-item d-lg-none mobile-menu-action"
+                aria-label="Mobile Menu Action Button"
+                type="button"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvas-mobile-menu"
+              >
+                <i class="icon-rt-bars-solid"></i>
+              </button>
+              <!-- Mobile Menu Toggole Button End -->
+
+              <!-- Search Button Start -->
+              <button
+                class="header-action-item d-md-none"
+                title="Search"
+                type="button"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvas-search"
+              >
+                <i class="icon-rt-loupe"></i>
+              </button>
+              <!-- Search Button End -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Header Bottom Area End -->
+    </header>
+
+    <main>
+      <section class="breadcrumb-section border-top-1 py-5">
+        <div class="container-full px-50">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb justify-content-start">
+              <li class="breadcrumb-item"><a href="#">Home</a></li>
+              <li class="breadcrumb-item"><a href="#">Shop</a></li>
+              <li class="breadcrumb-item active" aria-current="page">
+                checkout
+              </li>
+            </ol>
+          </nav>
+        </div>
+      </section>
+      <!-- Checkout Section Start -->
+      <section class="checkout-section section-space-ptb border-bottom-1">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <div
+                class="card position-relative box-shad"
+                style="overflow: hidden"
+              >
+                <div class="position-absolute r-0 card_icon">
+                  <i class="fa-solid fa-lock fs-15"></i>
+                </div>
+
+                <div
+                  class="position-absolute display-none vedio_back"
+                  style="display: none"
+                >
+                  <video width="100%" autoplay muted>
+                    <source src="./assets/images/Karmic.mp4" type="video/mp4" />
+                  </video>
+                </div>
+                <div class="p-2">
+                  <img
+                    class="card-img-top"
+                    src="./assets/images/products/Karmic Bag 04.png"
+                    alt="Card image cap"
+                    width="100%"
+                  />
+                </div>
+
+                <div class="card-body">
+                  <h6 class="card-title">Modal product-1 page</h6>
+                  <span> 2colors </span>
+
+                  <div
+                    class="d-flex justify-content-between align-items-center my-2"
+                  >
+                    <button class="btn btn-black">Shop Now</button>
+
+                    <span> Rs.12345 </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Checkout Section End -->
+    </main>
+
+    <!-- OffCanvas Cart Start -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvas-cart">
+      <div class="offcanvas-cart-wrap">
+        <div class="offcanvas-cart-header">
+          <div class="offcanvas-cart-title">YOUR CART</div>
+          <button
+            type="button"
+            class="btn-close text-end"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="offcanvas-body">
+          <div class="cart-product">
+            <!-- Cart Product Item Start -->
+            <div class="cart-product-item">
+              <a href="product-details.html" class="cart-product-thum">
+                <img
+                  src="assets/images/products/product-1.jpg"
+                  alt="Product Cart One"
+                />
+              </a>
+              <div class="cart-product-content">
+                <h6 class="cart-product-content-title">
+                  <a href="product-details.html">Augue nisi non neque</a>
+                </h6>
+                <div class="cart-product-content-bottom">
+                  <span class="cart-product-content-quantity">1 × </span>
+                  <span class="cart-product-content-amount">
+                    <bdi>
+                      <span class="visually-hidden">Price:</span>
+                      <span class="price-currency-symbol">$</span>75.00
+                    </bdi>
+                  </span>
+                </div>
+              </div>
+              <button class="cart-product-close">×</button>
+            </div>
+            <!-- Cart Product Item End -->
+            <!-- Cart Product Item Start -->
+            <div class="cart-product-item">
+              <a href="product-details.html" class="cart-product-thum">
+                <img
+                  src="assets/images/products/product-2.jpg"
+                  alt="Product Cart One"
+                />
+              </a>
+              <div class="cart-product-content">
+                <h6 class="cart-product-content-title">
+                  <a href="product-details.html">Sit voluptatem rhoncus</a>
+                </h6>
+                <div class="cart-product-content-bottom">
+                  <span class="cart-product-content-quantity">1 × </span>
+                  <span class="cart-product-content-amount">
+                    <bdi>
+                      <span class="visually-hidden">Price:</span>
+                      <span class="price-currency-symbol">$</span>79.00
+                    </bdi>
+                  </span>
+                </div>
+              </div>
+              <button class="cart-product-close">×</button>
+            </div>
+            <!-- Cart Product Item End -->
+            <!-- Cart Product Item Start -->
+            <div class="cart-product-item">
+              <a href="product-details.html" class="cart-product-thum">
+                <img
+                  src="assets/images/products/product-3.jpg"
+                  alt="Product Cart One"
+                />
+              </a>
+              <div class="cart-product-content">
+                <h6 class="cart-product-content-title">
+                  <a href="product-details.html">LAUDANTIUM ENIM FRINGI</a>
+                </h6>
+                <div class="cart-product-content-bottom">
+                  <span class="cart-product-content-quantity">1 × </span>
+                  <span class="cart-product-content-amount">
+                    <bdi>
+                      <span class="visually-hidden">Price:</span>
+                      <span class="price-currency-symbol">$</span>79.00
+                    </bdi>
+                  </span>
+                </div>
+              </div>
+              <button class="cart-product-close">×</button>
+            </div>
+            <!-- Cart Product Item End -->
+          </div>
+          <div class="offcanvas-cart-footer">
+            <div class="mini-cart-total">
+              <strong class="mini-cart-subtotal">Subtotal</strong>
+              <span class="mini-cart-amount">
+                <bdi> <span class="currency-symbol">$</span>279.00 </bdi>
+              </span>
+            </div>
+            <div class="cart-button-action-wrap gap-2 d-flex flex-column">
+              <a href="cart.html" class="btn-outline btn btn-full btn-lg"
+                >View Cart</a
+              >
+              <a href="checkout.html" class="btn-outline btn btn-full btn-lg"
+                >Checkout</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- OffCanvas Cart End -->
+
+    <div
+      class="offcanvas offcanvas-top offcanvas-search-area"
+      tabindex="-1"
+      id="offcanvas-search"
+    >
+      <div class="offcanvas-search-wrap">
+        <div class="offcanvas-search-header">
+          <div class="offcanvas-search-title">
+            <span class="visually-hidden">Search</span>
+          </div>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="offcanvas-search-body">
+          <div class="offcanvas-search-box">
+            <form action="#" class="offcanvas-search-form">
+              <input
+                type="text"
+                placeholder="Search..."
+                class="offcanvas-search-input"
+              />
+              <button type="submit" class="offcanvas-search-submit">
+                <i class="icon-rt-loupe"></i>
+              </button>
+            </form>
+            <div class="offcanvas-search-content">
+              <div class="offcanvas-search-keywords-list">
+                <p class="offcanvas-search-key-title">Popular searches :</p>
+                <ul class="offcanvas-search-popular d-flex gap-1">
+                  <li>
+                    <a href="#" class="btn btn-xs btn-gray btn-rounde-2">men</a>
+                  </li>
+                  <li>
+                    <a href="#" class="btn btn-xs btn-gray btn-rounde-2"
+                      >clothing</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="btn btn-xs btn-gray btn-rounde-2"
+                      >women</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="btn btn-xs btn-gray btn-rounde-2"
+                      >kids</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="btn btn-xs btn-gray btn-rounde-2">new</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Offcanvas Mobile Menu Start -->
+    <div
+      class="offcanvas offcanvas-start"
+      tabindex="-1"
+      id="offcanvas-mobile-menu"
+    >
+      <div class="offcanvas-header">
+        <h6>Menu</h6>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <nav class="navbar-mobile-menu">
+          <ul class="mobile-menu">
+            <li class="mobile-menu-item">
+              <a href="#" class="mobile-menu-link">
+                Demos
+                <span class="menu-expand"
+                  ><i class="icon-rt-arrow-down"></i
+                ></span>
+              </a>
+              <ul class="mega-menu mobile-menu--mega">
+                <li><a href="index.html" class="sub-menu-link">Home One</a></li>
+                <li>
+                  <a href="index-2.html" class="sub-menu-link">Home Two</a>
+                </li>
+                <li>
+                  <a href="index-3.html" class="sub-menu-link">Home Three</a>
+                </li>
+                <li>
+                  <a href="index-4.html" class="sub-menu-link">Home Four</a>
+                </li>
+              </ul>
+            </li>
+            <li class="mobile-menu-item">
+              <a href="#" class="mobile-menu-link"
+                >Shop
+                <span class="menu-expand"
+                  ><i class="icon-rt-arrow-down"></i></span
+              ></a>
+              <ul class="sub-menu">
+                <li>
+                  <a href="#" class="sub-menu-link">
+                    LAYOUT
+                    <span class="menu-expand"
+                      ><i class="icon-rt-arrow-down"></i
+                    ></span>
+                  </a>
+                  <ul class="sub-menu">
+                    <li>
+                      <a href="shop.html" class="megamenu-link"
+                        >No Sidebar Grid</a
+                      >
+                    </li>
+                    <li>
+                      <a href="shop-left-sidebar.html" class="megamenu-link"
+                        >Left Sidebar Shop Grid</a
+                      >
+                    </li>
+                    <li>
+                      <a href="shop-right-sidebar.html" class="megamenu-link"
+                        >Right Sidebar Shop Grid
+                      </a>
+                    </li>
+                    <li>
+                      <a href="shop-list-sidebar.html" class="megamenu-link"
+                        >Right Sidebar Shop List
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#" class="sub-menu-link">
+                    FEATURES
+                    <span class="menu-expand"
+                      ><i class="icon-rt-arrow-down"></i
+                    ></span>
+                  </a>
+                  <ul class="sub-menu">
+                    <li>
+                      <a
+                        href="shop-description-on-top.html"
+                        class="megamenu-link"
+                        >Show description
+                        <span class="menu-label">On Top</span></a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="shop-description-on-bottom.html"
+                        class="megamenu-link"
+                        >Show description
+                        <span class="menu-label">On Bottom</span></a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="shop-show-subcategories.html"
+                        class="megamenu-link"
+                        >Show subcategories
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="shop-no-sidebar-offcanvas.html"
+                        class="megamenu-link"
+                        >No Sidebar Off – Canvas</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#" class="sub-menu-link">
+                    PRODUCT STYLE
+                    <span class="menu-expand"
+                      ><i class="icon-rt-arrow-down"></i
+                    ></span>
+                  </a>
+                  <ul class="sub-menu">
+                    <li>
+                      <a href="shop-product-type-01.html" class="megamenu-link"
+                        >Product Card Style 1</a
+                      >
+                    </li>
+                    <li>
+                      <a href="shop-product-type-02.html" class="megamenu-link"
+                        >Product Card Style 2</a
+                      >
+                    </li>
+                    <li>
+                      <a href="shop-product-type-03.html" class="megamenu-link"
+                        >Product Card Style 3</a
+                      >
+                    </li>
+                    <li>
+                      <a href="shop-product-type-04.html" class="megamenu-link"
+                        >Product Card Style 4</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li class="mobile-menu-item">
+              <a href="#" class="mobile-menu-link"
+                >Product
+                <span class="menu-expand"
+                  ><i class="icon-rt-arrow-down"></i></span
+              ></a>
+              <ul class="sub-menu">
+                <li>
+                  <a href="#" class="sub-menu-link">
+                    PRODUCT GALLERY
+                    <span class="menu-expand"
+                      ><i class="icon-rt-arrow-down"></i
+                    ></span>
+                  </a>
+                  <ul class="sub-menu">
+                    <li>
+                      <a href="product-details.html" class="megamenu-link"
+                        >Simple Style</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="product-top-gallay-details.html"
+                        class="megamenu-link"
+                        >Image Top</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="product-details-grid-1-column.html"
+                        class="megamenu-link"
+                        >Grid - 1 column</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="product-details-grid-2-column.html"
+                        class="megamenu-link"
+                        >Grid - 2 column</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="product-details-variation.html"
+                        class="megamenu-link"
+                        >Gallery For Variation</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#" class="sub-menu-link">
+                    FEATURES
+                    <span class="menu-expand"
+                      ><i class="icon-rt-arrow-down"></i
+                    ></span>
+                  </a>
+                  <ul class="sub-menu">
+                    <li>
+                      <a
+                        href="product-details-variation-vertical-thumbs.html"
+                        class="megamenu-link"
+                        >Vertical Thumbnails</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="product-details-variable.html"
+                        class="megamenu-link"
+                        >Variable Product</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="product-details-countdown.html"
+                        class="megamenu-link"
+                        >Countdown Product</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="product-details-tab-accordion.html"
+                        class="megamenu-link"
+                        >Tab Accordion</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="product-details-tab-accordion-vertical.html"
+                        class="megamenu-link"
+                        >Tab Accordion Vertical</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li class="mobile-menu-item">
+              <a href="#" class="mobile-menu-link"
+                >Page
+                <span class="menu-expand"
+                  ><i class="icon-rt-arrow-down"></i></span
+              ></a>
+              <ul class="sub-menu">
+                <li>
+                  <a href="#" class="sub-menu-link">
+                    WOOCOMMERCE
+                    <span class="menu-expand"
+                      ><i class="icon-rt-arrow-down"></i
+                    ></span>
+                  </a>
+                  <ul class="sub-menu">
+                    <li>
+                      <a href="my-account.html" class="megamenu-link"
+                        >My account</a
+                      >
+                    </li>
+                    <li>
+                      <a href="checkout.html" class="megamenu-link">Checkout</a>
+                    </li>
+                    <li>
+                      <a href="cart.html" class="megamenu-link"
+                        >Shopping Cart</a
+                      >
+                    </li>
+                    <li>
+                      <a href="wishlist.html" class="megamenu-link">Wishlist</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#" class="sub-menu-link">
+                    OTHER PAGE
+                    <span class="menu-expand"
+                      ><i class="icon-rt-arrow-down"></i
+                    ></span>
+                  </a>
+                  <ul class="sub-menu">
+                    <li>
+                      <a href="about-us.html" class="megamenu-link">About Us</a>
+                    </li>
+                    <li>
+                      <a href="contact-us.html" class="megamenu-link"
+                        >Contact Us</a
+                      >
+                    </li>
+                    <li>
+                      <a href="store-locator.html" class="megamenu-link"
+                        >Store Locator</a
+                      >
+                    </li>
+                    <li>
+                      <a href="404-page.html" class="megamenu-link">404 Page</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li class="mobile-menu-item">
+              <a href="#" class="mobile-menu-link">
+                Blogs
+                <span class="menu-expand"
+                  ><i class="icon-rt-arrow-down"></i
+                ></span>
+              </a>
+              <ul class="mega-menu mobile-menu--mega">
+                <li><a href="blog.html" class="sub-menu-link">Blog Grid</a></li>
+                <li>
+                  <a href="blog-mask.html" class="sub-menu-link">Blog Mask</a>
+                </li>
+                <li>
+                  <a href="blog-list.html" class="sub-menu-link">Blog List</a>
+                </li>
+                <li>
+                  <a href="blog-left-sidebar.html" class="sub-menu-link"
+                    >Blog Left Sidebar</a
+                  >
+                </li>
+                <li>
+                  <a href="blog-right-sidebar.html" class="sub-menu-link"
+                    >Blog Right Sidebar</a
+                  >
+                </li>
+                <li>
+                  <a href="blog-no-sidebar.html" class="sub-menu-link"
+                    >No Sidebar</a
+                  >
+                </li>
+                <li>
+                  <a href="blog-details.html" class="sub-menu-link"
+                    >Blog Post Details</a
+                  >
+                </li>
+                <li>
+                  <a href="blog-details-two.html" class="sub-menu-link"
+                    >Blog Post Details Two</a
+                  >
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <!-- Offcanvas Mobile Menu End -->
+
+    <!-- Footer Area Start -->
+    <footer class="footer-area">
+      <div class="footer-top-area section-space-pt">
+        <div class="container-xxl">
+          <div class="row">
+            <div class="col-sm-12 col-md-7 col-lg-8">
+              <div class="row row-cols-2 row-cols-sm-3 row-cols-md-3">
+                <div class="col">
+                  <!-- Footer Widget Start -->
+                  <div class="footer-widget">
+                    <h4 class="footer-widget--title" title="Company">
+                      Company
+                    </h4>
+                    <ul class="widget--menu">
+                      <li class="widget--menu-item">
+                        <a href="wishlist.html" class="widget--menu-link"
+                          >Wishlist</a
+                        >
+                      </li>
+                      <li class="widget--menu-item">
+                        <a href="contact-us.html" class="widget--menu-link"
+                          >Contact us</a
+                        >
+                      </li>
+                      <li class="widget--menu-item">
+                        <a href="my-account.html" class="widget--menu-link"
+                          >My account</a
+                        >
+                      </li>
+                      <li class="widget--menu-item">
+                        <a href="about-us.html" class="widget--menu-link"
+                          >Privacy Policy</a
+                        >
+                      </li>
+                      <li class="widget--menu-item">
+                        <a href="about-us.html" class="widget--menu-link"
+                          >About us</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                  <!-- Footer Widget End -->
+                </div>
+                <div class="col">
+                  <!-- Footer Widget Start -->
+                  <div class="footer-widget">
+                    <h4 class="footer-widget--title" title="Information">
+                      Information
+                    </h4>
+                    <ul class="widget--menu">
+                      <li class="widget--menu-item">
+                        <a href="checkout.html" class="widget--menu-link"
+                          >Privacy Policy</a
+                        >
+                      </li>
+                      <li class="widget--menu-item">
+                        <a href="checkout.html" class="widget--menu-link"
+                          >Checkout</a
+                        >
+                      </li>
+                      <li class="widget--menu-item">
+                        <a href="contact-us.html" class="widget--menu-link"
+                          >Contact us</a
+                        >
+                      </li>
+                      <li class="widget--menu-item">
+                        <a href="my-account.html" class="widget--menu-link"
+                          >My account</a
+                        >
+                      </li>
+                      <li class="widget--menu-item">
+                        <a href="about-us.html" class="widget--menu-link"
+                          >About us</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                  <!-- Footer Widget End -->
+                </div>
+                <div class="col">
+                  <!-- Footer Widget Start -->
+                  <div class="footer-widget">
+                    <h4 class="footer-widget--title" title="Help">Help</h4>
+                    <ul class="widget--menu">
+                      <li class="widget--menu-item">
+                        <a href="wishlist.html" class="widget--menu-link"
+                          >Wishlist</a
+                        >
+                      </li>
+                      <li class="widget--menu-item">
+                        <a href="contact-us.html" class="widget--menu-link"
+                          >Contact us</a
+                        >
+                      </li>
+                      <li class="widget--menu-item">
+                        <a href="my-account.html" class="widget--menu-link"
+                          >My account</a
+                        >
+                      </li>
+                      <li class="widget--menu-item">
+                        <a href="about-us.html" class="widget--menu-link"
+                          >Privacy Policy</a
+                        >
+                      </li>
+                      <li class="widget--menu-item">
+                        <a href="about-us.html" class="widget--menu-link"
+                          >About us</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                  <!-- Footer Widget End -->
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-5 col-lg-4">
+              <!-- Footer Widget Start -->
+              <div class="footer-widget">
+                <h4
+                  class="footer-widget--title"
+                  title="Sign Up Now & Get 10% Off"
+                >
+                  Sign Up Now & Get 10% Off
+                </h4>
+                <div class="widget-newsletter">
+                  <p class="fs-16 mb-3">
+                    Be the first to hear about special offers, new arrivals &
+                    more.
+                  </p>
+                  <form action="#" class="widget-newsletter-from mb-4">
+                    <input
+                      type="text"
+                      class="widget-newsletter-input"
+                      placeholder="Enter your email address"
+                    />
+                    <button
+                      class="btn btn-primary btn-lg widget-newsletter-button"
+                      type="submit"
+                    >
+                      Subscribe
+                    </button>
+                  </form>
+                  <p class="mb-0">
+                    Send me news and offers from the HasThemes. I can
+                    unsubscribe at any time.
+                  </p>
+                  <p>
+                    I have read the HasThemes
+                    <a
+                      href="#"
+                      class="text-black fw-medium text-decoration-underline"
+                      target="_blank"
+                      >Privacy Policy</a
+                    >. Offer details, financial incentives and exclusions
+                    available here.
+                  </p>
+                </div>
+              </div>
+              <!-- Footer Widget End -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom bg-dark py-3">
+        <div class="container-xxl">
+          <div
+            class="d-flex flex-column flex-md-row justify-content-md-between align-items-center"
+          >
+            <p class="text-white mb-md-0">
+              Copyright &copy;
+              <a href="https://hasthemes.com/" target="_blank">HasThemes</a>.
+              All Rights Reserved.
+            </p>
+            <div class="payment">
+              <img
+                src="assets/images/others/payment.png"
+                width="286"
+                height="23"
+                alt="payment image"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer Area End -->
+
+    <!-- JS Vendor, Plugins & Activation Script Files -->
+
+    <!-- Vendors JS -->
+    <script src="assets/js/modernizr-3.11.7.min.js"></script>
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugins JS -->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/jquery.validate.min.js"></script>
+    <script src="assets/js/ajax.js"></script>
+
+    <!-- Activation JS -->
+    <script src="assets/js/main.js"></script>
+  </body>
+
+  <!-- Mirrored from htmldemo.net/bagse/bagse/checkout.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 06 Nov 2023 04:35:25 GMT -->
+</html>
